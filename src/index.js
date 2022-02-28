@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//1) Tener la var REact en el scope hay que carga react antes que todo
+import React from "react";
+// traer algo de otro archivo para utilizar si no das la raiz del archivo se trae del node_modules
+//2) tener la var ReactDom eb ek scope
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//3) Tener un componente de React
+//function App(){
+//    return <h1>Hola Mundo en JSX</h1>
+//}
+import App from "./App"
+import 'bootstrap/dist/css/bootstrap.css';
+import "./estilos.css"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//./es la misma carpeta
+//.. subi una carpeta dentro
+//4) Renderizar App en el DOM
+ReactDOM.render(App(),document.getElementById('root'))
