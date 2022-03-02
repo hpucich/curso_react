@@ -49,6 +49,10 @@ footer {
     width: 10rem;
 }
 
+#carrito{
+    height: 2rem;
+    width: 2rem;
+}
 .letra_chica{
     font-size: xx-small;
 }
